@@ -1,6 +1,6 @@
 
 #include <map>
-using my_map_t = std::map<std::string, std::vector<double>>; //I know what using does but why use it here
+using my_map_t = std::map<std::string, std::vector<double>>;
 
 
 double printVectorSum(std::vector<double> values){

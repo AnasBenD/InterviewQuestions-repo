@@ -5,7 +5,7 @@ class Sensor {
 public:
     Sensor(){};
 
-    virtual double measure() const {return 0;}; // why virtual
+    virtual double measure() const {return 0;};
 };
 // Derived class #1
 class LaserScanner : public Sensor {
@@ -32,7 +32,7 @@ void solutionOne(){
     LaserScanner scan;
     UltrasonicSensor uss;
 
-    vector<Sensor*> sensors; // why use a vector of pointers
+    vector<Sensor*> sensors;
 
     sensors.push_back(&scan);
     sensors.push_back(&uss);
@@ -51,7 +51,7 @@ void solutionTwo(){
 
     vector<Sensor*> sensors;
     sensors.push_back(scan);
-    sensors.push_back(uss); // is sensor now composed of dynamic array of pointers
+    sensors.push_back(uss);
 
     for (const auto& sensor: sensors)
     {
