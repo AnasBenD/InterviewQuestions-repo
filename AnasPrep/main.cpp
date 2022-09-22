@@ -41,3 +41,13 @@ int main() {
  * git commit -m "Commit Message"
  * git push
  * **/
+
+
+/** Tooling Cmake Hinweis
+*  ls : show files in folder
+   cmake . : generate native build tool files specific to your compiler and platform
+   ls :
+   make : (makefile) : buildsystem - drives the compiler and other build tools to build your code
+   ls
+  ./my_project : run the executable
+*/
